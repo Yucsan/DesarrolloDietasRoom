@@ -1,4 +1,4 @@
-package com.yucsan.proyectodieta_ver2.screens
+package com.yucsan.dietasroomfer.screens
 
 sealed class Ruta(val ruta:String) {
 

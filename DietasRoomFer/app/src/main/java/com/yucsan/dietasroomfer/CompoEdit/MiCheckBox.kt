@@ -1,4 +1,4 @@
-package com.yucsan.proyectodieta_ver2.Compo_Edit
+package com.yucsan.dietasroomfer.CompoEdit
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable

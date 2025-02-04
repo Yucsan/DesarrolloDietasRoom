@@ -1,4 +1,4 @@
-package com.yucsan.proyectodieta_ver2.Componentes2
+package com.yucsan.dietasroomfer.Componentes2
 
 import android.util.Log
 import androidx.compose.foundation.BorderStroke

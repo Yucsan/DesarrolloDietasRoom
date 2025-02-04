@@ -1,11 +1,17 @@
-package com.example.pruebaroom2025.modelo
+package com.yucsan.dietasroomfer.modeloRoom
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 
-@Database(entities = [Alimento::class, Ingrediente::class], version = 2)
+@Database(entities = [
+    Alimento::class,
+    Ingrediente::class,
+    ComponenteDietaEntity::class,
+    ComponenteIngredienteCrossRef::class
+], version = 2)
+
 abstract class AppDatabase : RoomDatabase() {
     abstract fun alimentoDao(): AlimentoDao
 

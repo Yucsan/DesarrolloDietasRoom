@@ -1,4 +1,4 @@
-package com.example.examenjpc_1.screens
+package com.yucsan.dietasroomfer.screens
 
 import android.content.Context
 import android.util.Log
@@ -33,9 +33,8 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.yucsan.proyectodieta_ver2.Compo_Edit.FormuEditaGrupo
-import com.yucsan.proyectodieta_ver2.Componentes2.CartaIngredientes
-import com.yucsan.proyectodieta_ver2.Componentes2.MiCarta
+import com.yucsan.dietasroomfer.CompoEdit.FormuEditaGrupo
+
 import modelo.CDModelView
 
 import modelo.ComponenteDieta

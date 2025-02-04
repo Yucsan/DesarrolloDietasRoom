@@ -17,19 +17,21 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.example.examenjpc_1.screens.Formulario
-import com.example.examenjpc_1.screens.Inicio
 import com.example.examenjpc_1.screens.ListadoDetalle
-import com.example.pruebaroom2025.modelo.Alimento
-import com.example.pruebaroom2025.modelo.AlimentoRepository
-import com.example.pruebaroom2025.modelo.AppDatabase
-import com.example.pruebaroom2025.modelo.Ingrediente
+import com.yucsan.dietasroomfer.CompoNav.NavigationBar
+import com.yucsan.dietasroomfer.componentes.DrawerContent
+import com.yucsan.dietasroomfer.componentes.MiTopAppBar
+import com.yucsan.dietasroomfer.modeloRoom.Alimento
+import com.yucsan.dietasroomfer.modeloRoom.AlimentoRepository
+import com.yucsan.dietasroomfer.modeloRoom.AppDatabase
+import com.yucsan.dietasroomfer.modeloRoom.Ingrediente
+import com.yucsan.dietasroomfer.screens.Formulario
+import com.yucsan.dietasroomfer.screens.Inicio
+import com.yucsan.dietasroomfer.screens.Ruta
+
 
 import com.yucsan.dietasroomfer.ui.theme.DietasRoomFerTheme
-import com.yucsan.proyectodieta_ver2.CompoNav.NavigationBar
-import com.yucsan.proyectodieta_ver2.componentes.DrawerContent
-import com.yucsan.proyectodieta_ver2.componentes.MiTopAppBar
-import com.yucsan.proyectodieta_ver2.screens.Ruta
+
 
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -47,7 +49,7 @@ class MainActivity : ComponentActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
 
-    prueba()
+    //prueba()
 
     setContent {
       val context = LocalContext.current

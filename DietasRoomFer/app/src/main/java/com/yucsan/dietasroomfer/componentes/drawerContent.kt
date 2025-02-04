@@ -1,4 +1,4 @@
-package com.yucsan.proyectodieta_ver2.componentes
+package com.yucsan.dietasroomfer.componentes
 
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height

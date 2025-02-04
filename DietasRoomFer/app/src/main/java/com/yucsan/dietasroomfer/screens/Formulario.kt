@@ -1,4 +1,4 @@
-package com.example.examenjpc_1.screens
+package com.yucsan.dietasroomfer.screens
 
 import android.content.Context
 import androidx.compose.foundation.layout.Arrangement
@@ -21,8 +21,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.ViewModel
 import androidx.navigation.NavController
-import com.yucsan.proyectodieta_ver2.componentes.MiRadioButton
-import com.yucsan.proyectodieta_ver2.componentes.MisTabsMain
+import com.yucsan.dietasroomfer.componentes.MiRadioButton
 import modelo.CDModelView
 import modelo.ComponenteDieta
 import modelo.TipoComponente

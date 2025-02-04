@@ -1,4 +1,4 @@
-package com.yucsan.proyectodieta_ver2.CompoNav
+package com.yucsan.dietasroomfer.CompoNav
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.DateRange

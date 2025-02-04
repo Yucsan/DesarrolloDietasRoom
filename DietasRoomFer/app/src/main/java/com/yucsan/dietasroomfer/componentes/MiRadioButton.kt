@@ -1,4 +1,4 @@
-package com.yucsan.proyectodieta_ver2.componentes
+package com.yucsan.dietasroomfer.componentes
 
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable

@@ -1,4 +1,4 @@
-package com.example.pruebaroom2025.modelo
+package com.yucsan.dietasroomfer.modeloRoom
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel

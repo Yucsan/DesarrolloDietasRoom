@@ -1,8 +1,7 @@
-package com.yucsan.proyectodieta_ver2.Compo_Edit
+package com.yucsan.dietasroomfer.CompoEdit
 
 
 import android.content.Context
-import android.util.Log
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -13,7 +12,6 @@ import androidx.compose.material3.Button
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.mutableStateOf
@@ -22,8 +20,8 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
-import com.yucsan.proyectodieta_ver2.componentes.AlertaIngredientes
-import com.yucsan.proyectodieta_ver2.componentes.MiRadioButton
+import com.yucsan.dietasroomfer.componentes.AlertaIngredientes
+import com.yucsan.dietasroomfer.componentes.MiRadioButton
 import modelo.CDModelView
 import modelo.ComponenteDieta
 import modelo.TipoComponente

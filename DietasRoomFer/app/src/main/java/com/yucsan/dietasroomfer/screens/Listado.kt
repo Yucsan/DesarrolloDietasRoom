@@ -15,8 +15,9 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.runtime.livedata.observeAsState
 import androidx.navigation.NavController
-import com.yucsan.proyectodieta_ver2.Compo_Edit.AlertaComponente
-import com.yucsan.proyectodieta_ver2.Componentes2.MiCarta
+import com.yucsan.dietasroomfer.CompoEdit.AlertaComponente
+import com.yucsan.dietasroomfer.Componentes2.MiCarta
+import com.yucsan.dietasroomfer.screens.ListadoIngredientes
 import modelo.CDModelView
 import modelo.ComponenteDieta
 import modelo.TipoComponente

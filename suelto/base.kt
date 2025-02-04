@@ -1,5 +1,3 @@
-package com.yucsan.dietasroomfer.modeloRoom
-
 import androidx.room.ColumnInfo
 import androidx.room.Embedded
 import androidx.room.Entity
@@ -22,8 +20,11 @@ data class Alimento(
     @ColumnInfo(name = "gr_lip") val grLip: Double = 0.0,
     @ColumnInfo(name = "cantidad") val cantidad: Double = 100.0
 ) {
-    fun calcularCalorias(): Double {
-        return 4 * grProt * cantidad / 100 + 4 * grHC * cantidad / 100 + 9 * grLip * cantidad / 100
+    @Ignore
+    private var caloriasTotales: Double = 0.0
+
+    fun calcularCalorias() {
+        caloriasTotales = 4 * grProt * cantidad / 100 + 4 * grHC * cantidad / 100 + 9 * grLip * cantidad / 100
     }
 }
 
@@ -41,7 +42,7 @@ data class Alimento(
 )
 data class Ingrediente(
     @PrimaryKey val id: String = UUID.randomUUID().toString(),
-    @ColumnInfo(name = "alimentoId") val alimentoId: String,
+    @ColumnInfo(name = "alimentoId") val alimentoId: String, // Clave foránea que hace referencia a Alimento
     @ColumnInfo(name = "cantidad") val cantidad: Float = 8f
 )
 
@@ -86,30 +87,16 @@ data class ComponenteDietaEntity(
 data class ComponenteIngredienteCrossRef(
     val componenteId: String,
     val ingredienteId: String,
-    val cantidad: Double
+    val cantidad: Double // Guardamos la cantidad específica del ingrediente en el componente
 )
 
 data class ComponenteConIngredientes(
     @Embedded val componente: ComponenteDietaEntity,
     @Relation(
-        parentColumn = "id",
-        entityColumn = "id",
-        associateBy = Junction(
-            value = ComponenteIngredienteCrossRef::class,
-            parentColumn = "componenteId",
-            entityColumn = "ingredienteId"
-        )
+        parentColumn = "id", // ID de ComponenteDietaEntity
+        entityColumn = "id", // ID correcto de Ingrediente en la tabla intermedia
+        associateBy = Junction(ComponenteIngredienteCrossRef::class)
     )
+
     val ingredientes: List<Ingrediente>
 )
-
-
-
-
-
-
-
-
-
-
-

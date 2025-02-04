@@ -1,4 +1,4 @@
-package com.yucsan.proyectodieta_ver2.componentes
+package com.yucsan.dietasroomfer.componentes
 
 import android.content.Context
 import androidx.compose.foundation.layout.Arrangement

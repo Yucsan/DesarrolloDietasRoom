@@ -1,4 +1,4 @@
-package com.example.pruebaroom2025.modelo
+package com.yucsan.dietasroomfer.modeloRoom
 
 import androidx.room.*
 import kotlinx.coroutines.flow.Flow
@@ -22,7 +22,7 @@ interface AlimentoDao {
     @Query("SELECT * FROM alimentos WHERE id = :id")
     fun getAlimentoById(id: String): Flow<Alimento?>
 
-    // esto es Nuevo
+    // *** INGREDIENTES
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertarIngrediente(ingrediente: Ingrediente)
@@ -35,6 +35,25 @@ interface AlimentoDao {
 
     @Query("SELECT * FROM alimentos WHERE id = :alimentoId")
     fun obtenerAlimentoConIngredientes(alimentoId: String): AlimentoConIngredientes
+
+    // *** COMPONENTE DIETA
+    // Insertar un ComponenteDieta
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insertarComponente(componente: ComponenteDietaEntity)
+
+    // Insertar relación Componente - Ingrediente
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insertarComponenteIngredienteCrossRef(relacion: ComponenteIngredienteCrossRef)
+
+    // Obtener todos los Componentes con sus Ingredientes
+    @Transaction
+    @Query("SELECT * FROM componente_dieta")
+    fun obtenerComponentesConIngredientes(): Flow<List<ComponenteConIngredientes>>
+
+    // Eliminar un ComponenteDieta
+    @Query("DELETE FROM componente_dieta WHERE id = :componenteId")
+    suspend fun eliminarComponente(componenteId: String)
+
 
 }
 
