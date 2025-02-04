@@ -18,9 +18,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
+import com.yucsan.dietasroomfer.screens.Ruta
 import com.yucsan.dietasroomfer.ui.theme.DietasRoomFerTheme
 import com.yucsan.proyectodieta_ver2.modelo.TabData
-import com.yucsan.proyectodieta_ver2.screens.Ruta
+
 
 // REVIZAR SI ES QUE NO LA BORRAMOS
 

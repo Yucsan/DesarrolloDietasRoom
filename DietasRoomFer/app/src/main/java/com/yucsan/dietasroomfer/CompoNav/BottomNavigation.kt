@@ -12,7 +12,8 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
-import com.yucsan.proyectodieta_ver2.screens.Ruta
+import com.yucsan.dietasroomfer.screens.Ruta
+
 
 @Composable
 fun NavigationBar(
